@@ -20,7 +20,7 @@
         <rowConstraints>
           <RowConstraints fillHeight="false" maxHeight="187.0" minHeight="80.0" prefHeight="80.0" vgrow="NEVER" />
           <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="250.0" vgrow="ALWAYS" />
-            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <GridPane>
