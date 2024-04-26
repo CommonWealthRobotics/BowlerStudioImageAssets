@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neuronrobotics.bowlerstudio.creature.VitatminWidget">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neuronrobotics.bowlerstudio.creature.VitatminWidget">
    <children>
       <GridPane prefHeight="386.0" prefWidth="583.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints fillHeight="false" maxHeight="187.0" minHeight="10.0" prefHeight="97.0" vgrow="NEVER" />
-          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="178.0" vgrow="ALWAYS" />
-            <RowConstraints prefHeight="500.0" vgrow="NEVER" />
+          <RowConstraints fillHeight="false" maxHeight="187.0" minHeight="80.0" prefHeight="80.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="250.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="600.0" minHeight="600.0" prefHeight="600.0" vgrow="NEVER" />
         </rowConstraints>
          <children>
             <GridPane>
@@ -58,7 +58,7 @@
                         <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                      <AnchorPane fx:id="transformPanel" minHeight="0.0" minWidth="0.0" prefHeight="494.0" prefWidth="370.0" />
+                      <AnchorPane fx:id="transformPanel" minHeight="600.0" minWidth="0.0" prefHeight="600.0" prefWidth="370.0" />
                         <GridPane GridPane.columnIndex="1">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
