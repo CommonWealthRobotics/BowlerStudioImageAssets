@@ -217,7 +217,7 @@
 .text-field {
 	-fx-text-fill: #f4ede0; /* logo-beige */
     -fx-background-color: #263d8c; /* logo-blue*/
-    -fx-border-color: #3d52a8; /* slightly lighter blue */
+    -fx-border-color: #263d8c; /* logo-blue*/
     	-fx-prompt-text-fill: #f2c83d; /* yellow */
     -fx-border-width: 2px;
 }
@@ -226,7 +226,7 @@
 .text-area {
 	-fx-text-fill: #f4ede0; /* logo-beige */
     -fx-background-color: #263d8c; /* logo-blue */
-    -fx-border-color: #3d52a8; /* slightly lighter blue */
+    -fx-border-color: #263d8c; /* logo-blue*/
     	-fx-prompt-text-fill: #f2c83d; /* yellow */
     -fx-border-width: 2px;
 }
@@ -250,9 +250,6 @@
     -fx-background-color: #263d8c; /* logo-blue */
 }
 
-.label {
-    -fx-text-fill: #f2c83d; /* yellow */
-}
 
 .tab {
  -fx-border-color: #3d52a8; /* lighter blue */
@@ -284,6 +281,62 @@
 
 .tab .tab-label {
     -fx-text-fill: #f4ede0; /* logo-beige */
+}
+
+/* Tab close button background */
+.tab .tab-close-button {
+    -fx-background-color: #ff0000; /* red */
+}
+
+/* Tab close button shape (the X) */
+.tab .tab-close-button .graphic {
+    -fx-background-color: #ffffff; /* white */
+}
+
+/* Tab close button */
+.tab-pane .tab .tab-close-button {
+    -fx-background-color: #ff0000; /* red */
+}
+
+/* Tab close button on hover */
+.tab-pane .tab .tab-close-button:hover {
+    -fx-background-color: #cc0000; /* darker red on hover */
+}
+
+/* Tab close button shape */
+.tab-pane .tab .tab-close-button .tab-close-graphic {
+    -fx-background-color: #ff0000; /* red */
+}
+
+/* Tab close button - override the shape color */
+.tab-pane .tab .tab-close-button {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab .tab-close-button .shape {
+    -fx-background-color: #ff0000; /* red */
+}
+
+/* Tab close button when closable is true */
+.tab .tab-close-button {
+    -fx-background-color: #ff0000; /* red */
+    -fx-background-radius: 3;
+}
+
+/* The actual graphic/icon inside the close button */
+.tab .tab-close-button > .graphic {
+    -fx-background-color: #ffffff; /* white X */
+}
+
+/* On hover */
+.tab-pane .tab .tab-close-button:hover .shape {
+    -fx-background-color: #cc0000; /* darker red */
+}
+
+.tab-pane .tab .tab-close-button {
+    -fx-background-color: #ff0000; /* red */
+    -fx-background-radius: 3;
+    -fx-padding: 2;
 }
 
 /* MenuBar styling */
@@ -445,8 +498,120 @@
     -fx-background-color: #3d52a8; /* lighter blue */
 }
 
-/* Set all border colors to lighter blue */
-* {
-    -fx-border-color: #263d8c; /* logo-blue */
-    
+/* TreeView background */
+.tree-view {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* TreeView content area */
+.tree-view .virtual-flow .clipped-container .sheet .tree-cell {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* TreeCell (individual tree items) */
+.tree-cell {
+    -fx-background-color: #3d52a8; /* lighter blue */
+    -fx-text-fill: #f4ede0; /* beige */
+}
+
+/* TreeCell when selected */
+.tree-cell:selected {
+    -fx-background-color: #263d8c; /* logo-blue for selection */
+    -fx-text-fill: #f4ede0; /* beige */
+}
+
+/* TreeCell when hovered */
+.tree-cell:hover {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* TreeCell arrow when selected */
+.tree-cell:selected .tree-disclosure-node .arrow {
+    -fx-background-color: #f4ede0; /* beige */
+}
+
+/* Tab close button background - red box */
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-close-button {
+    -fx-background-color: #ff0000; /* red background */
+    -fx-background-radius: 3;
+    -fx-padding: 2;
+}
+
+/* Tab close button X shape - white */
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-close-button > .graphic {
+    -fx-background-color: #ffffff; /* white X */
+}
+
+/* On hover */
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-close-button:hover {
+    -fx-background-color: #cc0000; /* darker red on hover */
+}
+
+/* Label text color - beige */
+.label {
+    -fx-text-fill: #f4ede0; /* beige */
+}
+
+/* Slider track background */
+.slider .track {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* Slider thumb/handle */
+.slider .thumb {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* Slider text/label color */
+.slider .text {
+    -fx-fill: #f4ede0; /* beige */
+}
+
+/* Slider axis labels if present */
+.slider .axis .axis-label {
+    -fx-text-fill: #f4ede0; /* beige */
+}
+/* Slider tick labels */
+.slider .axis .tick-label {
+    -fx-text-fill: #f4ede0; /* beige */
+}
+
+/* Slider value label (if shown) */
+.slider .value-label {
+    -fx-text-fill: #f4ede0; /* beige */
+}
+
+/* Alternative for axis text */
+.slider .axis-label,
+.slider .axis .text {
+    -fx-fill: #f4ede0; /* beige */
+}
+
+/* RadioButton background */
+.radio-button {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* RadioButton radio circle background - deselected */
+.radio-button .radio {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* RadioButton radio circle when selected */
+.radio-button:selected .radio {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* RadioButton dot (indicator when selected) */
+.radio-button:selected .dot {
+    -fx-background-color: #263d8c; /* logo-blue - contrasts with yellow */
+}
+
+/* Text object fill color */
+.text {
+    -fx-fill: #f4ede0; /* beige */
 }
