@@ -180,14 +180,17 @@
 }
 
 .button-run {
+ -fx-text-fill: #f2c83d; /* yellow */
 	-fx-background-color: #7CFC00;
 }
 
 .button-run:hover {
-	-fx-background-color: #90EE90;
+ -fx-text-fill: #263d8c; /* logo-blue*/
+	-fx-background-color: #f4ede0;
 }
 
 .button-stop {
+ -fx-text-fill: #f2c83d; /* yellow */
 	-fx-background-color: #DC143C;
 }
 /**
@@ -196,13 +199,254 @@
  */
 
 .button-stop:hover {
+ -fx-text-fill: #263d8c; /* logo-blue*/
 	-fx-background-color: #CD5C5C;
 }
 
 .button{
- 	min-width: 90px;
+ -fx-text-fill: #f2c83d; /* yellow */
+ 	-min-width: 90px;
+ 	-fx-background-color: #263d8c;
 }
 .button:hover {
-	-fx-background-color: #FFFF00;
+ -fx-text-fill: #263d8c; /* logo-blue*/
+	-fx-background-color: #f4ede0;
 }
 
+/* TextField styling */
+.text-field {
+	-fx-text-fill: #f4ede0; /* logo-beige */
+    -fx-background-color: #263d8c; /* logo-blue*/
+    -fx-border-color: #3d52a8; /* slightly lighter blue */
+    	-fx-prompt-text-fill: #f2c83d; /* yellow */
+    -fx-border-width: 2px;
+}
+
+/* TextArea styling */
+.text-area {
+	-fx-text-fill: #f4ede0; /* logo-beige */
+    -fx-background-color: #263d8c; /* logo-blue */
+    -fx-border-color: #3d52a8; /* slightly lighter blue */
+    	-fx-prompt-text-fill: #f2c83d; /* yellow */
+    -fx-border-width: 2px;
+}
+/* TextArea content area */
+.text-area .content {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+.tool-bar {
+    -fx-background-color: #3d52a8; /* slightly lighter blue */
+}
+
+.combo-box {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.combo-box .arrow {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.label {
+    -fx-text-fill: #f2c83d; /* yellow */
+}
+
+.tab {
+ -fx-border-color: #3d52a8; /* lighter blue */
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.tab-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+.tab-pane .tab-header-area .headers-region {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+
+.split-pane .split-pane-divider {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+.anchor-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+.tab .tab-label {
+    -fx-text-fill: #f4ede0; /* logo-beige */
+}
+
+/* MenuBar styling */
+.menu-bar {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* MenuItem styling */
+.menu-item {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* Menu arrow styling */
+.menu .arrow {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* Menu arrow when selected/hovered */
+.menu:showing .arrow,
+.menu:hover .arrow {
+    -fx-background-color: #f4ede0; /* beige */
+}
+
+/* Menu styling */
+.menu {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.menu-item:hover,
+.menu-item:focused {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+/* HBox styling */
+.hbox {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* VBox styling */
+.vbox {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* ComboBox popup background */
+.combo-box-popup .list-view {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* ComboBox popup items */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #263d8c; /* logo-blue */
+    -fx-text-fill: #f4ede0; /* logo-beige */
+}
+
+/* ComboBox popup items when hovered */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #3d52a8; /* lighter blue on hover */
+}
+
+/* ComboBox text styling */
+.combo-box .list-cell {
+    -fx-text-fill: #f4ede0; /* logo-beige */
+}
+
+/* ScrollBar track background */
+.scroll-bar .track {
+    -fx-background-color: #5a6ec4; /* even lighter blue */
+}
+
+/* ScrollBar thumb (indicator) */
+.scroll-bar .thumb {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* ScrollBar increment/decrement buttons */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #f2c83d; /* yellow */
+}
+
+/* ScrollBar buttons when pressed/selected */
+.scroll-bar .increment-button:pressed,
+.scroll-bar .decrement-button:pressed {
+    -fx-background-color: #f4ede0; /* beige */
+}
+
+/* ScrollBar button arrows */
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #263d8c; /* logo-blue for arrow color */
+}
+/* ScrollPane background */
+.scroll-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* ScrollPane viewport (content area) */
+.scroll-pane .viewport {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* ScrollPane content */
+.scroll-pane .content {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* Group styling */
+.group {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* CheckBox background */
+.check-box {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+/* CheckBox box background */
+.check-box .box {
+    -fx-background-color: #263d8c; /* logo-blue */
+}
+
+.border-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* SplitPane background */
+.split-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+/* SplitPane content areas */
+.split-pane .split-pane-content {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* BorderPane regions */
+.border-pane .top,
+.border-pane .bottom,
+.border-pane .left,
+.border-pane .right,
+.border-pane .center {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* AnchorPane content */
+.anchor-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* StackPane (often used as container) */
+.stack-pane {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* Region (base class for most containers) */
+.region {
+    -fx-background-color: #3d52a8; /* lighter blue */
+}
+
+/* Set all border colors to lighter blue */
+* {
+    -fx-border-color: #263d8c; /* logo-blue */
+    
+}
